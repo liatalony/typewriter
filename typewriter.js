@@ -7,12 +7,12 @@ function init() {
   //console.log(strCopy);
   const strNum = str.length;
   // console.log(strNum);
-  let count = 0;
+  let count = 1;
   loop();
 
   function loop() {
     setTimeout(function() {
-      str = strCopy.substr(0, count + 1);
+      str = strCopy.substr(0, count);
       // console.log(count);
       document.querySelector(".typewritten").textContent = str;
       count++;
